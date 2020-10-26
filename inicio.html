@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">   
+    <title>Sirna Sabores</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    
+    <header class="main_header">
+        <div class="burger-menu">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div> 
+        </div>
+        <div id="info" class="info_main">
+            <div class="links">
+                <div><a href="inicio.html">Inicio</a></div>
+                <div><a  href="#contactanos">Contacto</a></div>
+                <div><a  href="pedidos.html">Pedidos</a></div>
+            </div>
+            <div class="social">
+                <div><a  href="https://www.spotify.com" target="_blank"> <img   src="Images/Spotify Logo.png" ></a></div>
+                <div><a  href="https://www.facebook.com" target="_blank"> <img  src="Images/Facebook Logo.png"></a></div>
+                <div><a  href="https://www.YouTube.com" target="_blank"> <img  src="Images/YouTube Logo.png"></a></div>
+            </div>
+        </div>            
+    </header> 
+    <div class="title">Sirna Sabores</div>  
+    <section class="slide">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">                    
+            <img src="images/slide1.jpg" style="width:100%">
+            <div class="text">Un nuevo gusto a tu paladar</div>
+            </div>    
+            <div class="mySlides fade">
+            
+            <img src="images/slide2.jpg" style="width:100%">
+            <div class="text">Proba las nuevas canastitas</div>
+            </div>    
+            <div class="mySlides fade">          
+            <img src="images/slide3.jpg" style="width:100%">
+            <div class="text">Cortada a cuchillo</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+   </section>   
+   <section id="contactanos" class="contacto">       				
+        <h2 class="title2">CONTACTANOS </h2>				
+        <div class="contenido">
+           
+                <form class="formulario" role="form" name="sentMessage" id="contactForm" >		
+                    <div class="form-group">
+                        <label for="usr" >Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre*" id="name" required >
+                    </div>
+                            
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email*" id="email" required>                            
+                    </div>                                
+                    <div class="form-group">
+                            <label for="comment">Mensaje</label>
+                                <textarea class="form-control" rows="7" placeholder="Mensaje*" id="message" required ></textarea>                                    
+                            </div>
+                     <div class="form-end">                                             
+                            <input type="submit" class="btn btnForm" value="Enviar">
+                            <input type="reset" class="btn btnForm">
+                        </div>
+                </form>
+                              
+            <article>                        
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2737788344607!2d-58.38484090827462!3d-34.59723789503231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab7f59a29e9%3A0x9f8dba15ecbd746c!2sTeatro%20Coliseo!5e0!3m2!1ses!2sar!4v1602714800681!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <p>Capital Federal, Buenos Aires, Argentina.</p>
+            </article>					
+        </div>        					
+    </section>    
+    <footer class="main-footer">
+        2019 todos los derechos reservados
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="funcion.js" async></script>
+    
+</body>
+
+</html>

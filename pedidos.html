@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">   
+    <title>Sirna Sabores</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="burger-menu">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div> 
+        </div>
+        <div id="info" class="info_main">
+            <div class="links">
+                <div><a href="inicio.html">Inicio</a></div>                
+                <div><a href="pedidos.html">Pedidos</a></div>
+            </div>
+            <div class="social">
+                <div><a href="https://www.spotify.com" target="_blank"> <img src="Images/Spotify Logo.png"></a></div>
+                <div><a href="https://www.facebook.com" target="_blank"> <img src="Images/Facebook Logo.png"></a></div>
+                <div><a href="https://www.YouTube.com" target="_blank"> <img src="Images/YouTube Logo.png"></a></div>
+            </div>
+        </div>        
+    </header> 
+    <div class="title">
+     Sirna Sabores         
+    <button id="btnCart" class="btnCarrito" onclick="btnCart()">Carrito
+            <div id="stock" ></div>
+    </button>  
+    </div>   
+    <section class="container">
+        <h2 class="section-header">Hace tu pedido!</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Empanada de carne</span>
+                <img class="shop-item-image" src="Images/carne.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$72</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AGREGAR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Empanada caprese</span>
+                <img class="shop-item-image" src="Images/caprese.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$72</span>
+                    <button class="btn btn-primary shop-item-button"type="button">AGREGAR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Empanada de jamon y cebolla</span>
+                <img class="shop-item-image" src="Images/JYC.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$72</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AGREGAR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Empanada de jamon y queso</span>
+                <img class="shop-item-image" src="Images/jyq.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$72</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="section-header">Canastitas</h2>
+        <div class="shop-items2">
+            <div class="shop-item">
+                <span class="shop-item-title">Canastita de pollo y verdeo</span>
+                <img class="shop-item-image" src="Images/pollo.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$80</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AGREGAR</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Canastita de provolone</span>
+                <img class="shop-item-image" src="Images/provolone.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$90</span>
+                    <button class="btn btn-primary shop-item-button" type="button">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cart" class="containerCartOpen">
+        <h2 class="section-header">Selecionados</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRECIO</span>
+            <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+        </div>
+        <div class="cart-items">
+
+        </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0.00</span>
+        </div>
+        <button class="btn  btn-purchase" onclick="purchase()" type="button">COMPRAR</button>
+    </section>
+    
+    <footer class="main-footer">
+        2019 todos los derechos reservados
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="funcion.js" async></script>
+</body>
+
+</html>
